@@ -1,0 +1,11 @@
+#Kaitlin Morgan
+#<!---------------Project 1: Half Pyramid------------>
+
+#Ask user for number of levels and character to make up pyramid blocks
+levels = int(input("How many levels? "))
+blocks = input("Enter a symbol to use to build the pyramid: ")
+
+#Range to determine how big pyramid should be
+for pyramid in range(1,levels +1):
+#Prints the specified character times the number of levels the user entered to make pyramid
+    print(pyramid * blocks)
