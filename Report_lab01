@@ -1,1 +1,6 @@
-Report test
+#Report 1: It still technically works, however, the half pyramid has too many
+#characters now on each level and looks funny.
+
+#Report 2: Much like the first half pyramid, the full pyramid goes through the
+#same glitch where the characters simply repeat and make an sort of 'double'
+#pyramid on every level.

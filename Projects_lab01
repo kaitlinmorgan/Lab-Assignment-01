@@ -7,5 +7,39 @@ blocks = input("Enter a symbol to use to build the pyramid: ")
 
 #Range to determine how big pyramid should be
 for pyramid in range(1,levels +1):
-#Prints the specified character times the number of levels the user entered to make pyramid
+#Prints the specified character times the number of levels the user entered
+#to make pyramid
     print(pyramid * blocks)
+
+#<!-------------Project 2: Full Pyramid-------------->
+
+#Ask user for number of levels and character to make up pyramid blocks
+levels = int(input("How many levels? "))
+blocks = input("Enter a symbol to use to build the pyramid: ")
+
+#Range to determine how big pyramid should be
+for pyramid in range(1, levels +1):
+#If level is zero, nothing shows up
+    if(pyramid == 0):
+        print(blocks * pyramid)
+#Printing pyramid in centered formation (couldn't get it to stop aligning left?)
+    else:
+        print(' ' + blocks*(pyramid*2-1) + ' ')
+
+#<!-------------Project 3: Pyramid Fix-------------->
+
+#Ask user for number of levels and character to make up pyramid blocks
+levels = int(input("How many levels? "))
+blocks = input("Enter a symbol to use to build the pyramid: ")
+
+#Define length of entered character
+len_blocks = len(blocks)
+
+#Range to determine how big pyramid should be
+for pyramid in range(1,levels +1):
+#Specify character length that the pyramid cannot work for
+    if len_blocks > 1:
+        print("Sorry, you can only enter one character.")
+#Otherwise, print the pyramid if one character entered for specified levels
+    else:
+        print(pyramid * blocks)
