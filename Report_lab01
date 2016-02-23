@@ -1,6 +1,73 @@
-#Report 1: It still technically works, however, the half pyramid has too many
-#characters now on each level and looks funny.
+#<!-------------Report 1-------------->
 
-#Report 2: Much like the first half pyramid, the full pyramid goes through the
-#same glitch where the characters simply repeat and make an sort of 'double'
-#pyramid on every level.
+It still technically works, however, the half pyramid has too many
+characters now on each level and looks funny.
+
+#<!-------------Report 2-------------->
+
+Much like the first half pyramid, the full pyramid goes through the
+same glitch where the characters simply repeat and make an sort of 'double'
+pyramid on every level.
+
+#<!-------------Report 3-------------->
+
+The objectives of this program were to work off of for loop functions
+to create designated outputs, think about how to use these basic functions to
+make shapes such as a pyramid, parabola, and circle, and to present the challenges
+of glitches in basic functions as to inspire a thought process of how to go about
+making a code as flaw free as possible.
+
+Most of my variables were named pretty clearly in relation to what they represented,
+specific to each project and what they were trying to tackle.  In the pyramid code,
+'levels' referred to the height of the pyramid, 'blocks' to the special character
+used to build it, and 'pyramid' defined the actual pyramid shape in accordance
+with the range specific to the number of levels.  In the fix code, I used the
+variable 'len_blocks' to define the length of the special characters to stop them
+rom being longer than one.
+
+In the parabola code, 'x_start' refers to the starting range value for the parabola
+(usually negative) and 'x_end' the ending value (positive) i.e., (-2,2) points on
+each side of the parabola.  'x' itself is defined as an empty integer and I gave
+'y' the parabola formula while parabola represents the parabola itself.
+
+For the circle, 'r' is the radius of the circle, which is user imputed.  'Width'
+in the is case is the width of the blot the circle is on (x-axis) and 'height'
+is the height of the plot (y-axis).  'a' and 'b' are the random variables in a
+circle equation which I simply set equal to the radius.  The 'circle' is the
+defined circle in terms of x, y, the radius, and it's building block special
+character '*'.  The last for loop is simply called plot because the join function
+is what draws the outline of the circle onto the plot.
+
+The set of steps behind these five project involved the use of many for loops and
+defining of multiple variables.  I used the range function quite a bit, particularly
+with the pyramid and circle to define the shapes and how far they should go or
+how big they should be.
+
+There were several flaws in my code, including tasks I was not able to fully
+manage.  With the pyramids, even once I had fixed the problem of entering more
+than one special character to build the pyramid out of, the error phrase kept
+repeating as many times as the entered amount of levels instead of just once.
+With the full pyramid, I tried various ways to get it centered, but could never
+seem to get it right despite the number in each row being correct.  I tried to
+use a 'center.' function I found, but to no avail.  I tried working off of a
+base code on stackoverflow where someone had made a centered pyramid of 1's, but
+it did not work when I tried to tinker with it and turn the ones into the user
+imputed value (they had a space after the one which I could not keep with the
+user input variable).  At one point I managed to make it very diagonally slanted.
+
+The parabola gave me the most difficulties, I had little idea how to tackle it,
+but gave it an attempt.  I kept getting errors about the x and y variables not
+being defined properly and when I did manage to get those error free, I could
+not figure out how to map the parabola at all, despite obtain information from
+the user.
+
+The circle gave me similar trouble, I know it is definitely not perfect.  If the
+radius was too big, parts of the circle started disappearing off the edge.  I
+believe I managed to fix this by making the plot three times bigger than the
+radius so that the circle stayed on the plot every time I tested it, but now the
+plot started creating a lot of extra blank space.
+
+Overall, this assignment presented an array of challenges, but I tried my best
+to tackle them with the basic functions we learned and hope to improve in the
+coming assignments as the extent these functions can be used for starts to click
+for me.
